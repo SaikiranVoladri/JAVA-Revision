@@ -1,6 +1,128 @@
-// import java.util.*;
-// public class Arraylist {
+import java.util.*;
 
+
+public class Arraylist {
+
+
+    // public static int water(ArrayList<Integer> al){
+
+    // //     int maxwater=0;
+       
+    // //     int totwat=0;
+
+    // //     for(int i=0;i<al.size();i++){
+    // //         for(int j=i+1;j<al.size();j++){
+    // //             int height= Math.min(al.get(i), al.get(j));
+    // //             System.out.print("("+al.get(i)+" "+al.get(j)+")");
+    // //             int width= j-i;//3
+    // //              totwat= height*width;
+    // //              System.out.print(totwat + "");
+    // //              maxwater= Math.max(totwat, maxwater);
+    // //              System.out.print(","+maxwater+" ");
+    // //         }
+    // //         System.out.println();
+           
+            
+           
+          
+    // //     }
+    // //     return maxwater;
+    // // }
+
+
+    // // max water two pointer approach 
+
+    // public static int maxwater(ArrayList<Integer> al){
+    //     int lp=0;
+    //     int rp= al.size()-1;
+    //     int maxwatter=0;
+
+    //     while(lp<rp){
+    //         int ht= Math.min(al.get(lp),al.get(rp));
+    //         int width= -(lp-rp);
+    //         int currwater= ht*width;
+    //         maxwatter= Math.max(maxwatter, currwater);
+
+    //         if(al.get(lp)<al.get(rp)){
+    //             lp++;
+    //         }else{
+    //             rp--;
+    //         }
+    //     }
+    //     return maxwatter;
+    // }
+
+    public static boolean pairsum(ArrayList<Integer> al, int target){
+
+        for(int i=0;i<al.size();i++){
+            for(int j=i+1;j<al.size();j++){
+                if((al.get(i)+al.get(j))==target){
+                    return true;
+                }
+            }
+        }
+        return false;
+
+    }
+
+    public static boolean pairsum2(ArrayList<Integer> al, int target){
+        int lp=0;
+        int rp= al.size()-1;
+       while(lp<rp){
+        if(al.get(lp)+al.get(rp)==target){
+            return true;
+        }
+        if(al.get(lp)<=al.get(rp)){
+            lp++;
+        }else{
+            rp--;
+        }
+       }
+       return false;
+    }
+
+
+    public static boolean pairsum3(ArrayList<Integer>al, int target){
+        int lp=0;
+        int rp=0;
+        int n= al.size();
+        for(int i=0;i<al.size()-1;i++){
+            if(al.get(i)>al.get(i+1)){
+               lp=i+1;
+                rp=i;
+            }
+        }
+
+        while(lp!=rp){
+            if(al.get(lp)+al.get(rp)==target){
+                return true;
+            }
+            if(al.get(lp)+al.get(rp)<target){
+               lp= (lp+1)%n;
+            }else{
+                rp= (n+rp-1)%n;
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        ArrayList <Integer> al= new ArrayList<>();
+        al.add(11);
+        al.add(15);
+        al.add(6);
+        al.add(8);
+        al.add(9);
+        al.add(10);
+        System.out.println(pairsum3(al, 16));
+     
+
+
+
+;
+    }
+
+
+}
 //     public static void main(String[] args) {
 //         ArrayList<ArrayList<Integer>> al= new ArrayList<>();
 //         ArrayList<Integer> l1= new ArrayList<>();

@@ -111,3 +111,4 @@ public class Bitmanipulation {
     }
     
 }
+//bit manipulation code

@@ -65,21 +65,21 @@ public class Arraylist {
 
     }
 
-    public static boolean pairsum2(ArrayList<Integer> al, int target){
-        int lp=0;
-        int rp= al.size()-1;
-       while(lp<rp){
-        if(al.get(lp)+al.get(rp)==target){
-            return true;
-        }
-        if(al.get(lp)<=al.get(rp)){
-            lp++;
-        }else{
-            rp--;
-        }
-       }
-       return false;
-    }
+//     public static boolean pairsum2(ArrayList<Integer> al, int target){
+//         int lp=0;
+//         int rp= al.size()-1;
+//        while(lp<rp){
+//         if(al.get(lp)+al.get(rp)==target){
+//             return true;
+//         }
+//         if(al.get(lp)<=al.get(rp)){
+//             lp++;
+//         }else{
+//             rp--;
+//         }
+//        }
+//        return false;
+//     }
 
 
     public static boolean pairsum3(ArrayList<Integer>al, int target){

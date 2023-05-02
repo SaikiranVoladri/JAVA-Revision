@@ -1,6 +1,6 @@
-import java.util.*;
-public class basics{
-public static void main(String args[]){
+// import java.util.*;
+// public class basics{
+// public static void main(String args[]){
     // System.out.print("Hello world\n");
     // System.out.println("Hellowor\rld");
     // variables 

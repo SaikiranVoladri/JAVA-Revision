@@ -9,18 +9,16 @@
 //       updatearr(arr, val+1, n+1);
 //       arr[n]= arr[n]-2;
  
-//     }
+    }
 
 
-//     public static void printarr(int arr[]){
-//         for(int i=0;i<arr.length;i++){
-//             System.out.print(arr[i]+" ");
-//         }
-//     }
+  public static void printarr(int arr[]){
+       for(int i=0;i<arr.length;i++){
+           System.out.print(arr[i]+" ");
+       }     }
+              static int count=0;
 
-//              static int count=0;
-
-//     public static void substrings(String str, String ans,int i){
+   public static void substrings(String str, String ans,int i){
 //         if(i==str.length()){
 //             if(ans.length()==0){
 //                 System.out.println("null");

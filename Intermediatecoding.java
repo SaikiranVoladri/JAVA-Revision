@@ -1,18 +1,16 @@
 // import java.util.*;
 // public class Intermediatecoding {
 
-
-// //     // // Amstrong number 153(1^3 +5^3+3^3)power = no of digit (153)3 , (1324)4
-// //     // public static boolean Amstrong(int n){
+     // // Amstrong number 153(1^3 +5^3+3^3)power = no of digit (153)3 , (1324)4
+   // public static boolean Amstrong(int n){
 // //     //     int N=0;
      //     int original=n;
 // //     //     int temp=n;
 //     //     while(n>0){
- //     //         N++;        n=n/10;
-// //     //     }
-// //     //     int sum=0;
-// //     //     while(temp!=0){
-// //     //         int ld= temp%10;
+    //         N++;        n=n/10;
+// //     //     }/     //     int sum=0;
+     //     while(temp!=0){
+ //     //         int ld= temp%10;
            
 // //     //         sum+=Math.pow(ld,N);
 // //     //         temp=temp/10;   

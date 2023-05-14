@@ -9,15 +9,15 @@ public class DivideAndQonquer{
                 temp[k]= arr[i];
                 i++;k++;
             }
-            else{
+      //      else{
                 temp[k]=arr[j];
-                j++;k++;
+      //          j++;k++;
             }
-        }
+        //}
 
         while(i<=mid){
             temp[k++]=arr[i++];
-        }
+      //  }
         while(j<=ei){
             temp[k++]=arr[j++];
         }

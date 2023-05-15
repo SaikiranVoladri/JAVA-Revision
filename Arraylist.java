@@ -4,9 +4,9 @@ import java.util.*;
 public class Arraylist {
 
 
-    // public static int water(ArrayList<Integer> al){
+     public static int water(ArrayList<Integer> al){
 
-    // //     int maxwater=0;
+    //     int maxwater=0;
        
     // //     int totwat=0;
 

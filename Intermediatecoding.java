@@ -2,9 +2,8 @@
 // public class Intermediatecoding {
 
      // // Amstrong number 153(1^3 +5^3+3^3)power = no of digit (153)3 , (1324)4
-   // public static boolean Amstrong(int n){
-// //     //     int N=0;
-//     int original=n;
+   // public static boolean Amstrong(int n){//     //     int N=0;
+     int original=n;
      //     int temp=n;
      //     while(n>0){
    /         N++;        n=n/10;     //     }/     //     int sum=0;

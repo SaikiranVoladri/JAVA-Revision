@@ -1,4 +1,4 @@
-// public class Backtracking {
+public class Backtracking {
 
     public static void updatearr(int arr[], int val, int n){      if(n==arr.length){
 //          printarr(arr);

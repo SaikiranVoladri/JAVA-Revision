@@ -1,13 +1,12 @@
 public class Backtracking {
 
     public static void updatearr(int arr[], int val, int n){      if(n==arr.length){
-//          printarr(arr);
+          printarr(arr);
              return;
        }
        arr[n]=val;
       updatearr(arr, val+1, n+1);
-//       arr[n]= arr[n]-2;
- 
+       arr[n]= arr[n]-2;
     }
 
 
